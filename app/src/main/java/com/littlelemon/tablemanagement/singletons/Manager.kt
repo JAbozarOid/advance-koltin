@@ -7,6 +7,6 @@ import com.littlelemon.tablemanagement.interfaces.Personnel
  */
 object Manager : Personnel {
     override fun serveCustomer() {
-        TODO("Not yet implemented")
+        // could be override
     }
 }
