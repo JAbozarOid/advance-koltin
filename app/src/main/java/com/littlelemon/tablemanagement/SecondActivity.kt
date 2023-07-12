@@ -13,6 +13,7 @@ class SecondActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
+        // there is data consistency for the add and remove function
         RestaurantTables.removeCustomer("Abozar")
         Log.d(TAG, "onCreate: ${RestaurantTables.getCustomers()}")
     }
