@@ -2,6 +2,7 @@ package com.littlelemon.tablemanagement.singletons
 
 /**
  * singleton class
+ * there is one instance of the object that can access to the class
  */
 object RestaurantTables {
 

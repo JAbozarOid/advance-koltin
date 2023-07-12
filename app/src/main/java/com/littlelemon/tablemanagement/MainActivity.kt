@@ -15,6 +15,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // create an object without constructor ()
         RestaurantTables.addCustomer("Abozar")
         RestaurantTables.addCustomer("Sweet")
         RestaurantTables.addCustomer("Mamad")
