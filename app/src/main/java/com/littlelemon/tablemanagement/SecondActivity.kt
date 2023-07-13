@@ -3,6 +3,7 @@ package com.littlelemon.tablemanagement
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
+import androidx.appcompat.widget.AppCompatTextView
 import com.littlelemon.tablemanagement.singletons.RestaurantTables
 
 class SecondActivity : ComponentActivity() {
@@ -16,5 +17,11 @@ class SecondActivity : ComponentActivity() {
         // there is data consistency for the add and remove function
         RestaurantTables.removeCustomer("Abozar")
         Log.d(TAG, "onCreate: ${RestaurantTables.getCustomers()}")
+
+
+        // getting data from main activity
+        findViewById<AppCompatTextView>(R.id.tvShowMSG).apply {
+            text = intent.getStringExtra(MainActivity.KEY_MSG)
+        }
     }
 }

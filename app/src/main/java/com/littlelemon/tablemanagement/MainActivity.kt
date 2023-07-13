@@ -25,7 +25,9 @@ class MainActivity : ComponentActivity() {
         Log.d(TAG, "onCreate: ${RestaurantTables.getCustomers()}")
 
         findViewById<AppCompatButton>(R.id.btn).setOnClickListener {
-            startActivity(Intent(this, SecondActivity::class.java))
+            startActivity(Intent(this, SecondActivity::class.java).apply {
+                putExtra(KEY_MSG, "data from main activity")
+            })
         }
 
         // access the static data of the class Waiter from this class
@@ -48,5 +50,9 @@ class MainActivity : ComponentActivity() {
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "onResume: ${RestaurantTables.getCustomers()}")
+    }
+
+    companion object {
+        const val KEY_MSG = "msg"
     }
 }
