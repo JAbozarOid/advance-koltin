@@ -38,6 +38,7 @@ class MainActivity : ComponentActivity() {
         items.add(0, OrderItem(name = "Burger", price = 8.00))
         items.add(1, OrderItem(name = "Fries", price = 4.00))
         items.add(2, OrderItem(name = "Soda", price = 2.00))
+        items.add(3, OrderItem(name = "Ice Cream", price = 4.00))
 
         val tax: Double = TaxCalculator.getTaxAmountForOrderItems(orderItemList = items)
 
