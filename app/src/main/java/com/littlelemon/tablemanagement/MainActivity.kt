@@ -41,8 +41,8 @@ class MainActivity : ComponentActivity() {
         items.add(3, OrderItem(name = "Ice Cream", price = 4.00))
 
         val tax: Double = TaxCalculator.getTaxAmountForOrderItems(orderItemList = items)
-
         Log.d(TAG, "TaxCalculator: $tax")
+
     }
 
     override fun onResume() {
