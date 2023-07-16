@@ -49,6 +49,11 @@ class MainActivity : ComponentActivity() {
         // extension function
         showMessage("new message")
 
+        // go to product activity
+        findViewById<AppCompatButton>(R.id.btn_product).setOnClickListener {
+            startActivity(Intent(this, ProductsActivity::class.java))
+        }
+
     }
 
     override fun onResume() {
