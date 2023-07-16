@@ -8,6 +8,7 @@ import androidx.appcompat.widget.AppCompatButton
 import com.littlelemon.tablemanagement.entity.OrderItem
 import com.littlelemon.tablemanagement.entity.TaxCalculator
 import com.littlelemon.tablemanagement.entity.Waiter
+import com.littlelemon.tablemanagement.extension.showMessage
 import com.littlelemon.tablemanagement.singletons.RestaurantTables
 
 class MainActivity : ComponentActivity() {
@@ -44,6 +45,9 @@ class MainActivity : ComponentActivity() {
 
         val tax: Double = TaxCalculator.getTaxAmountForOrderItems(orderItemList = items)
         Log.d(TAG, "TaxCalculator: $tax")
+
+        // extension function
+        showMessage("new message")
 
     }
 
