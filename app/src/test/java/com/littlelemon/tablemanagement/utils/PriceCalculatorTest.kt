@@ -22,6 +22,9 @@ class PriceCalculatorTest {
 
     @After
     fun tearDown() {
+        item1Price = 0.0
+        item2Price = 0.0
+        taxRate = 0.0
     }
 
     @Test
