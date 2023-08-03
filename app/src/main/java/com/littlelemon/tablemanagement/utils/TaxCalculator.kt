@@ -1,4 +1,6 @@
-package com.littlelemon.tablemanagement.entity
+package com.littlelemon.tablemanagement.utils
+
+import com.littlelemon.tablemanagement.entity.OrderItem
 
 class TaxCalculator {
 
