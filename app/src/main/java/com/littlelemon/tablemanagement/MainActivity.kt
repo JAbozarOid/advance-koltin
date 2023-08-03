@@ -6,7 +6,7 @@ import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.littlelemon.tablemanagement.entity.OrderItem
-import com.littlelemon.tablemanagement.entity.TaxCalculator
+import com.littlelemon.tablemanagement.utils.TaxCalculator
 import com.littlelemon.tablemanagement.entity.Waiter
 import com.littlelemon.tablemanagement.extension.showMessage
 import com.littlelemon.tablemanagement.singletons.RestaurantTables
