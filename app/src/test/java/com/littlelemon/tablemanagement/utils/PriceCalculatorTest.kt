@@ -12,6 +12,9 @@ class PriceCalculatorTest {
     private var item2Price: Double = 0.0
     private var taxRate : Double = 0.0
 
+    /**
+     * before each test method run
+     */
     @Before
     fun setUp() {
         classUnderTest = PriceCalculator()
@@ -20,6 +23,9 @@ class PriceCalculatorTest {
         taxRate = 0.15
     }
 
+    /**
+     * after each test method run
+     */
     @After
     fun tearDown() {
         item1Price = 0.0
