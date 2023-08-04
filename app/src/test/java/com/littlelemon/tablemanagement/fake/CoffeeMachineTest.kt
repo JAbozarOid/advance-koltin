@@ -7,7 +7,7 @@ import org.junit.Test
 
 class CoffeeMachineTest {
 
-    lateinit var classUnderTest : CoffeeMachine
+    lateinit var classUnderTest: CoffeeMachine
     lateinit var fakeMilkFrother: FakeMilkFrother
 
     @Before
@@ -27,10 +27,21 @@ class CoffeeMachineTest {
     @Test
     fun makeCoffee() {
 
-        // arrange + act
+        // arrange
+        //set new variable for testing
+        fakeMilkFrother.getMilkLogic = { "foam" }
+
+        // maybe we want to throw an exception -> is exception handled in makeCoffee method of CoffeeMachine
+        //fakeMilkFrother.getMilkLogic = { throw Exception() }
+
+        // check empty is handled
+        fakeMilkFrother.getMilkLogic = {" "}
+
+        // act
         val result = classUnderTest.makeCoffee()
 
         // assert
-        Assert.assertEquals("<<<The Result is>>> ","Coffee with hot milk",result)
+        Assert.assertEquals("<<<The Result is>>> ", "Coffee with foam", result)
+
     }
 }
