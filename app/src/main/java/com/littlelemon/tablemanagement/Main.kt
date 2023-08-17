@@ -1,5 +1,6 @@
 package com.littlelemon.tablemanagement
 
+import com.littlelemon.tablemanagement.collection.ListAndSetSample
 import com.littlelemon.tablemanagement.entity.Dish
 import com.littlelemon.tablemanagement.entity.Order
 import com.littlelemon.tablemanagement.extension.printIngredients
@@ -19,5 +20,8 @@ object Main {
             Dish(dishName = "Onion Soup", mutableListOf("Onion", "Cheese", "Water", "Salt"))
         onionSoup.removeSalt("Cheese")
         onionSoup.printIngredients()
+
+        val callList = ListAndSetSample()
+        print(callList.getList())
     }
 }
