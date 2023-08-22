@@ -20,10 +20,11 @@ class ListAndSetSample {
     // set doesn't have index []
     fun getSet(): Set<Int> {
 
-        val set = setOf(1, 2, 3)
+        val set = setOf(1, 2, 3,4,5)
 
         for (i in set) {
             print(i)
+            print(set.size)
         }
 
         return set

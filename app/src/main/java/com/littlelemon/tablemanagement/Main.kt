@@ -1,6 +1,7 @@
 package com.littlelemon.tablemanagement
 
 import com.littlelemon.tablemanagement.collection.ListAndSetSample
+import com.littlelemon.tablemanagement.collection.MapSample
 import com.littlelemon.tablemanagement.entity.Dish
 import com.littlelemon.tablemanagement.entity.Order
 import com.littlelemon.tablemanagement.extension.printIngredients
@@ -23,5 +24,11 @@ object Main {
 
         val callList = ListAndSetSample()
         print(callList.getList())
+
+        val mapSample = MapSample()
+        println("the map value is ${mapSample.getMap()}")
+
+        val setSample = ListAndSetSample()
+        println("the set value is ${setSample.getSet()}")
     }
 }
