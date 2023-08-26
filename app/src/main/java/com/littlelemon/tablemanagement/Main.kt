@@ -6,6 +6,7 @@ import com.littlelemon.tablemanagement.entity.Dish
 import com.littlelemon.tablemanagement.entity.Order
 import com.littlelemon.tablemanagement.extension.printIngredients
 import com.littlelemon.tablemanagement.extension.removeSalt
+import com.littlelemon.tablemanagement.lambda.LambdaClass
 
 
 object Main {
@@ -30,5 +31,13 @@ object Main {
 
         val setSample = ListAndSetSample()
         println("the set value is ${setSample.getSet()}")
+
+        val initLambda = LambdaClass()
+        val callLambda = initLambda.taxCalculator.invoke(200.0, 15.0)
+        println("show function as object $callLambda")
+
+        val callLambda2 = initLambda.taxCalculator3.invoke(200.0, 15.0)
+        println("show function as object $callLambda2")
+
     }
 }
